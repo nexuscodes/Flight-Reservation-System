@@ -2,29 +2,6 @@
 #include <boost/date_time.hpp>
 using namespace std;
 
-/* HOW TO USE
-The given cpp programs accpets the following queries :
-
-1. Add an airline : to add the airline in the directory
-
-Query Description : "ADD_AIRLINE airlineID airlineName source destination totalSeats 'days on which it is available'";
-eg : "ADD_AIRLINE BC107 Viscara Mumbai Delhi 160 Monday Tuesday"
-
-2. search flights:
-
-description : "SEARCH_FLIGHTS Source Destination DD MM YYYY"
-eg : "SEARCH_FLIGHTS Mumbai Delhi 30 10 2019"
-
-3 Book Tickets
-
-description : "BOOKSEATS Flightid DD MM YYYY USERNAME";
-eg : "BOOKSEATS BC107  29 10 2019 AYUSH"
-
-4 Show Flights Booked By user
-description : "SHOW_FLIGHTS_BOOKED UserName"
-
-*/
-// END OF HOW TO uSE
 const string DAYS[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
 map<string, int> dayToDayNumber;
 map<string, vector<pair<string, string>>> flightBookedByUser;
